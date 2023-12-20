@@ -19,7 +19,7 @@ object Counter {
           } else {
             val newCnt = cnt + 1
             ctx.log.info(s"Zwiększamy licznik do wartości \$newCnt")
-            apply(newCnt)
+            apply(newCnt, min, max)
           }
         case Dec =>
           if (cnt == min) {
@@ -28,7 +28,7 @@ object Counter {
           } else {
             val newCnt = cnt - 1
             ctx.log.info(s"Zmniejszamy licznik do wartości \$newCnt")
-            apply(newCnt)
+            apply(newCnt, min, max)
           }
 
       }}
