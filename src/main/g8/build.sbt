@@ -21,11 +21,13 @@ Compile / scalacOptions ++= Seq(
 */
 
 libraryDependencies ++= {
-  val pekkoV = "1.2.1"
+  val pekkoV = "1.3.0"
   Seq(
     "org.apache.pekko" %% "pekko-actor-typed" % pekkoV,
     "org.apache.pekko" %% "pekko-slf4j" % pekkoV,
     //"ch.qos.logback" % "logback-classic" % "1.3.8", // for JDK ver. < 11
     "ch.qos.logback" % "logback-classic" % "1.5.21" // for Java ver. >= 11
   )
-}
+}                    a
+// For JDK >= 24 uncomment the following line
+//reStart / javaOptions += "--sun-misc-unsafe-memory-access=allow"
