@@ -28,6 +28,6 @@ libraryDependencies ++= {
     //"ch.qos.logback" % "logback-classic" % "1.3.8", // for JDK ver. < 11
     "ch.qos.logback" % "logback-classic" % "1.5.22" // for Java ver. >= 11
   )
-}                    a
+}
 // For JDK >= 24 uncomment the following line
 //reStart / javaOptions += "--sun-misc-unsafe-memory-access=allow"
